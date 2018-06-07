@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Source Han Serif';
+  src: local("Source Han Serif-Bold"), local("SourceHanSerif-Bold"), url(../font/SourceHanSerif-Bold.ttc); }
+
+@font-face {
+  font-family: 'Source Han Sans';
+  font-weight: 500;
+  src: local("Source Han Sans"), local("SourceHanSans"), url(../font/SourceHanSansCN-Medium.otf); }
+
+@font-face {
+  font-family: 'ZapfHumanist601BT-Demi';
+  font-weight: 400;
+  src: local("ZapfHumanist601BT-Demi"), url(../font/ZapfHumanist601BT-Demi.otf); }
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #000000;
+  width: 100%;
+  color: #FFFFFF; }
+  @media screen and (min-width: 992px) {
+    footer > .container-fluid {
+      padding: 0 60px 0 30px; } }
+
+.footer {
+  padding: 15px 0 20px; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      padding: 20px 0 60px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between; } }
+  @media screen and (min-width: 992px) {
+    .footer .card_box {
+      margin-top: 10px; } }
+  .footer .card_box .logo {
+    margin-left: 0px;
+    margin-bottom: 20px; 
+  }
+  .footer .card_box .information {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: "Source Han Sans";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .footer .card_box .information {
+        justify-content: flex-start;
+        margin-top: 15px; } }
+    .footer .card_box .information p {
+      text-align: left; }
+    .footer .card_box .information .address {
+      margin-right: 30px; }
+      .footer .card_box .information .address .address_ch {
+        margin-bottom: 12px; }
+        @media screen and (min-width: 768px) {
+          .footer .card_box .information .address .address_ch {
+            margin-bottom: 18px; } }
+    @media screen and (max-width: 768px) {
+      .footer .card_box .information .contact p:nth-child(-n + 2) {
+        margin-bottom: 4px; } }
+    .footer .card_box .information a:hover {
+      color: #ada9a0; }
+  .footer .card_box .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer .card_box .social .subscribe_input {
+      border: 1px solid #FFF;
+      display: inline-flex;
+      flex-wrap: wrap;
+      outline: none; }
+      .footer .card_box .social .subscribe_input .form-control {
+        color: #ffffff;
+        font-size: 14px;
+        background-color: transparent;
+        outline: none;
+        border-radius: 0px;
+        padding: 6px 8px;
+        border: none;
+        width: 65%;
+        height: auto;
+        box-shadow: none; }
+      .footer .card_box .social .subscribe_input .input-group-btn {
+        width: 35%;
+        outline: none; }
+        .footer .card_box .social .subscribe_input .input-group-btn .sub_btn {
+          font-family: "ZapfHumanist601BT-Demi";
+          font-size: 15px;
+          background-color: transparent;
+          outline: none;
+          border-radius: 0px;
+          border: none;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          -webkit-transition: .25s;
+          -moz-transition: .25s;
+          -ms-transition: .25s;
+          -o-transition: .25s;
+          transition: .25s; }
+          .footer .card_box .social .subscribe_input .input-group-btn .sub_btn:hover {
+            background-color: #fff;
+            color: #000; }
+    @media screen and (max-width: 768px) {
+      .footer .card_box .social {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column; }
+        .footer .card_box .social .subscribe_input {
+          margin-bottom: 20px; } }
+    @media (max-width: 480px) {
+      .footer .card_box .social .subscribe_input {
+        width: 80%; } }
+    @media screen and (min-width: 768px) {
+      .footer .card_box .social .community {
+        margin-right: -15px; } }
+    .footer .card_box .social .community > li {
+      display: inline-block;
+      margin: 0 5px; }
+
+#back_to_top {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  z-index: 1001;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 30px;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+  background-image: url("../images/@1x/img_logo_style4@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  #back_to_top::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    left: 48%;
+    width: 25%;
+    height: 50%;
+    background-image: url("../images/@1x/img_back_top@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-50%); }
+  @media screen and (max-width: 768px) {
+    #back_to_top {
+      bottom: 40px;
+      right: 18px;
+      width: 50px;
+      height: 50px; }
+      #back_to_top::before {
+        top: -22px; } }
+  #back_to_top.show {
+    opacity: 1; }

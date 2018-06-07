@@ -1,0 +1,1 @@
+jQuery(function(u){u("a").focus(function(){u(this).blur()})});
