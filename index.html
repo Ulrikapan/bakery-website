@@ -974,10 +974,13 @@ var shan_modal = $('.shan_modal').remodal(options);
 
     <script>
     $(document).ready(function() {
-        setTimeout(function() {
-            $('body').addClass('loaded');
+        window.onload = function(){
+            setTimeout(function() {
+                $('body').addClass('loaded');
 
-        }, 3000);
+            }, 3000);  
+        }
+
     });
     </script>
 
